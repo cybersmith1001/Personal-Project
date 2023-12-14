@@ -1,0 +1,154 @@
+<!DOCTYPE html>     <!-- For additional comments see "home" page-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Scratch Card Weekly Votes</title>
+    <script src="https://cdn.tailwindcss.com"></script>    
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="flex justify-center">
+            <img src="logo.jpg" height=200 width=250 alt="Website logo">
+        </div>
+        <nav class="nav" >
+            <a href="home.html" > Home</a>
+                <a href="weekly_votes.html"> Weekly Votes</a>
+                <a href="scratch_photos.html" > Weekly Scratch Card Photos</a>
+                <a href="scratch_videos.html" > Weekly Scratching Videos</a>
+                <a href="Profit_and_Loss.html" > Profit and Loss</a>
+                <a href="blog.html"> Blogging Area</a>  
+        </nav> 
+    </header>  
+
+    <section>
+        <h1 id=projectName class="text-center text-sky-600 text-lg mt-5">
+            PROJECT SCRATCH CARD
+        </h1>
+
+        <div class="text-center">
+            <button id="predictions" class="text-sky-600 text-lg mt-5">
+
+            PREDICTIONS
+
+            </button>
+        </div>
+
+        <p class="description"> A prediction can be made before watching each weeks video. <br> 
+        Click on the radio button to make a choice. </p>  <!-- Class of "description" is used on multiple pages-->
+
+    </section>
+
+        <div class="grid grid-cols-5">  <!-- Splits the page into 5 columns, four for votes one for graphics -->
+    <section id="weekOneP" class="text-black text-lg mx-5 mt-5 flex-none text-left">
+            
+            Week One <br>
+
+        <form action="results.html" method="POST" class="text-left">  <!-- POST is a secure method to get to results.html--> 
+            <p>Predicted winnings earned </p>                               <!-- Creates the form (radio button choices)-->
+                <input type="radio" id="WeekOneA" name="amountA" required value="£0_A">
+                <label for="WeekOneA">£0</label><br>
+                <input type="radio" id="WeekOneB" name="amountA" value="£1_£5_A">  <!-- Important to get input correct as it effects the whole page-->
+                <label for="WeekOneB">£1 - £5</label><br>
+                <input type="radio" id="WeekOneC" name="amountA" value="£6-£50_A">
+                <label for="WeekOneC">£6 - £50</label><br>
+                <input type="radio" id="WeekOneD" name="amountA" value="£51-£100_A">
+                <label for="WeekOneD">£51 - £100</label><br>
+                <input type="radio" id="WeekOneE" name="amountA" value="£101_£999_A">
+                <label for="WeekOneE">£101 - £999</label><br>
+                <input type="radio" id="WeekOneF" name="amountA" value="£1000+_A">
+                <label for="WeekOneF">£1000+</label><br><br>
+                <button type="submit" id="submitA" class="bg-sky-600 text-white px-5 py-2 rounded" onclick=nudgeA()> Submit </button>
+                    <script> function nudgeA() {alert("Your choice is for Week One (1st December - 7th December)");}</script>                      
+        </form>             <!-- In Line JavaScript - When "Submit" is pressed a warning box will appear on the screen-->
+    </section>                  <!-- Then user will be directed to a landing page (results.html)-->
+            
+    <section id="weekTwoP" class="text-black text-lg mx-8 mt-5 flex-none text-left">
+            
+            Week Two <br>    <!-- Repeats form (Radio Button) choices -->
+            
+        <form action="results.html" method="POST" class="text-left">
+            <p>Predicted winnings earned </p>
+                <input type="radio" id="WeekTwoA" name="amountB" required value="£0_B">
+                <label for="WeekTwoA">£0</label><br>
+                <input type="radio" id="WeekTwoB" name="amountB" value="£1_£5_B">
+                <label for="WeekTwoB">£1 - £5</label><br>
+                <input type="radio" id="WeekTwoC" name="amountB" value="£6-£50_B">
+                <label for="WeekTwoC">£6 - £50</label><br>
+                <input type="radio" id="WeekTwoD" name="amountB" value="£51-£100_B">
+                <label for="WeekTwoD">£51 - £100</label><br>
+                <input type="radio" id="WeekTwoE" name="amountB" value="£101_£999_B">
+                <label for="WeekTwoE">£101 - £999</label><br>
+                <input type="radio" id="WeekTwoF" name="amountB" value="£1000+_B">
+                <label for="WeekTwoF">£1000+</label><br><br>
+                <button type="submit" id="submitB" class="bg-sky-600 text-white px-5 py-2 rounded" onclick=nudgeB()> Submit </button>
+                    <script> function nudgeB() {alert("Your choice is for Week Two (8th December - 14th December)");}</script>                      
+        </form>
+    </section>
+
+
+    <section id="weekThreeP" class="text-black text-lg mx-8 mt-5 flex-none text-left">
+
+            Week Three <br>
+            
+        <form action="results.html" method="POST" class="text-left">
+            <p>Predicted winnings earned </p>
+                <input type="radio" id="WeekThreeA" name="amountC" required value="£0_C">
+                <label for="WeekThreeA">£0</label><br>
+                <input type="radio" id="WeekThreeB" name="amountC" value="£1_£5_C">
+                <label for="WeekThreeB">£1 - £5</label><br>
+                <input type="radio" id="WeekThreeC" name="amountC" value="£6-£50_C">
+                <label for="WeekThreeC">£6 - £50</label><br>
+                <input type="radio" id="WeekThreeD" name="amountC" value="£51-£100_C">
+                <label for="WeekThreeD">£51 - £100</label><br>
+                <input type="radio" id="WeekThreeE" name="amountC" value="£101_£999_C">
+                <label for="WeekThreeE">£101 - £999</label><br>
+                <input type="radio" id="WeekThreeF" name="amountC" value="£1000+_C">
+                <label for="WeekThreeF">£1000+</label><br><br>
+                <button type="submit" id="submitC" class="bg-sky-600 text-white px-5 py-2 rounded" onclick=nudgeC()> Submit </button>
+                    <script> function nudgeC() {alert("Your choice is for Week Three (15th December - 21st December)");}</script>                      
+        </form>
+    </section>
+
+    <section id="weekFourP" class="text-black text-lg mx-8 mt-5 flex-none text-left">
+
+                Week Four <br>
+             
+        <form action="results.html" method="POST" class="text-left">
+            <p>Predicted winnings earned </p>
+                <input type="radio" id="WeekFourA" name="amountD" required value="£0_D">
+                <label for="WeekFourA">£0</label><br>
+                <input type="radio" id="WeekFourB" name="amountD" value="£1_£5_D">
+                <label for="WeekFourB">£1 - £5</label><br>
+                <input type="radio" id="WeekFourC" name="amountD" value="£6-£50_D">
+                <label for="WeekFourC">£6 - £50</label><br>
+                <input type="radio" id="WeekFourD" name="amountD" value="£51-£100_D">
+                <label for="WeekFourD">£51 - £100</label><br>
+                <input type="radio" id="WeekFourE" name="amountD" value="£101_£999_D">
+                <label for="WeekFourE">£101 - £999</label><br>
+                <input type="radio" id="WeekFourF" name="amountD" value="£1000+_D">
+                <label for="WeekFourF">£1000+</label><br><br>
+                <button type="submit" id="submitD" class="bg-sky-600 text-white px-5 py-2 rounded" onclick=nudgeD()> Submit </button>
+                    <script> function nudgeD() {alert("Your choice is for Week Four (22nd december - 28th December)");}</script>                      
+        </form>
+    </section>
+
+    <section id="december" class="my-20">
+        <img src="december.jpg" alt="Game week dates in large font">  <!-- Importing local graphics which I created in Microsoft Word/Paint-->
+    </section>     <!-- Idea for page design needs to be considered in January in regards to how the second month will appear on here-->
+        
+        </div>
+    
+            <script src="./script.js"></script>
+
+            <footer id="footer"> An original idea by <a href="JLS.html"> James Lewis Smith </a> & Coding completed by James Lewis Smith 2023 &copy;</footer>
+</body>
+</html>
+
+<!-- The idea of this page is to have a space to vote by a site visitor, predicting what will be won each week-->
+<!-- There are multiple submit buttons, which is not ideal, but this is done due to the design
+         of the site as it is ideally a site which requires visiting each week to see weekly changes -->
+<!-- Four weeks have been set up as a demo for this assignment. The idea is to have a full year on here
+            Or I could store each month in a file/library and only have four submit buttons open at one time-->

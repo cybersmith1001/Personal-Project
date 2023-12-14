@@ -1,0 +1,82 @@
+<!DOCTYPE html>      <!-- For additional comments see other pages-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Scratch Card Videos</title>
+    <script src="https://cdn.tailwindcss.com"></script>    
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <header>
+        <div class="flex justify-center">
+            <img src="logo.jpg" height="200" width="250" alt="Website logo">
+        </div>
+            <nav class="nav" >
+                <a href="home.html" > Home</a>
+                <a href="weekly_votes.html"> Weekly Votes</a>
+                <a href="scratch_photos.html" > Weekly Scratch Card Photos</a>
+                <a href="scratch_videos.html" > Weekly Scratching Videos</a>
+                <a href="Profit_and_Loss.html" > Profit and Loss</a>
+                <a href="blog.html"> Blogging Area</a>
+            </nav> 
+    </header>  
+
+        <section>
+            <h1 id=projectName class="text-center text-sky-600 text-lg mt-5">
+
+            PROJECT SCRATCH CARD
+            </h1>
+
+                <div class="text-center">
+                <button id="witness" class="text-sky-600 text-lg mt-5">
+
+                    WITNESS THE SCRATCH
+
+                </button>
+
+                    <p class="description"> A summary of the scratch cards being revealed. <br> 
+                        It has been edited and time limited to 60 seconds</p>
+
+                </div>
+
+        </section>
+
+        <div class="grid grid-cols-3 mx-10">   <!-- Splits the page to three sections with each video having equal space-->
+            <section class="mx-5 mt-5 flex-none">            
+                <h1 id="video1" class="flex-none mt-10 mb-5 text-center text-sky-600 text-2xl"> Week One</h1>
+                    <video class="border-4 border-sky-600" controls>  <!-- Puts a border around the videos-->
+                        <source src="Scratch_Video_Week_1.mp4" type="video/mp4">  <!-- Adds video from local source-->
+                    </video>
+            </section>
+            
+            <section class="mx-5 mt-5 flex-none"> 
+                <h1 id="video2" class="flex-none mt-10 mb-5 text-center text-sky-600 text-2xl"> Week Two</h1>
+                    <video class="border-4 border-sky-600" controls>
+                        <source src="Scratch_Video_Week_2.mp4" type="video/mp4">    <!-- Video two-->
+                    </video>
+            </section>
+            
+            <section class="mx-5 mt-5 flex-none">     
+                <h1 id="video3" class="flex-none mt-10 mb-5 text-center text-sky-600 text-2xl"> Week Three</h1>
+                    <video class="border-4 border-sky-600" controls>
+                        <source src="video.mp4" type="video/mp4">    <!-- Video three-->
+                    </video>        
+            </section>
+        </div>
+
+        <!-- More videos to be added here in future weeks / months-->
+      
+          <script src="./script.js"></script>
+
+          <footer id="footer"> An original idea by <a href="JLS.html"> James Lewis Smith </a> & Coding completed by James Lewis Smith 2023 &copy;</footer>
+</body>
+      
+</html>
+
+      <!-- The idea of this page was originally to visually display the scratching of cards in a video-->
+      <!-- It soon became apparent that recording the scratchings will be impracticable so just still images of the results are shown-->
+      <!-- Videos need to be added to this page every Thursday for one whole year -->
+      <!-- For the purposes of displaying my layout for the assignment there is one test video in position -->

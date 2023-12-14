@@ -1,0 +1,76 @@
+<!DOCTYPE html>  <!--This document is an HTML-->
+<html lang="en">
+<head>  <!-- Keeps the page admin in the "head"-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Scratch Card Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>    <!--Links in line tailwind to the HTML document-->
+    <link rel="stylesheet" href="style.css"> <!--Links the CSS file yo the HTML document-->
+
+</head>
+<body> <!-- Starts the content-->
+  <header> <!-- Not to be confused with "head" "header" is the logo and navigational bar-->
+
+    <div class="flex justify-center">  <!-- First tailwind usage via using conditions within "class"-->
+        <img src="logo.jpg" height="200" width="250" alt="Website logo">  <!--Adding the logo-->
+    </div>
+        <nav class="nav" > <!--The navigational bar at the top of the page-->
+            <a href="home.html" > Home</a>     <!-- All are internal links between the web pages to create the website-->
+            <a href="weekly_votes.html"> Weekly Votes</a>
+            <a href="scratch_photos.html" > Weekly Scratch Card Photos</a>
+            <a href="scratch_videos.html" > Weekly Scratching Videos</a>
+            <a href="Profit_and_Loss.html" > Profit and Loss</a>
+            <a href="blog.html"> Blogging Area</a>
+        </nav> 
+  </header>  
+
+  <main>
+        <h1 id=projectName class="text-center text-sky-600 text-lg mt-5">  <!-- First ID usage to help with CSS-->
+
+            PROJECT SCRATCH CARD
+        </h1>
+    <div class="text-center">
+        <button id="365" class="text-sky-600 text-lg mt-5">
+
+            365 DAYS     <!-- First use of a button to aid JavaScript functionality-->
+
+        </button>
+    </div>
+    
+    <div>
+        <p id="welcome" class="text-xl text-center ml-10 mr-10 mt-5">
+            Beginning on the 1st December 2023 I am delighted to say I am going to take on the challenge of buying a scratch card every day for a whole year. 
+            I have decided to record this process on this website, updating it every Thursday. <br> I will provide a photograph of each scratch card purchased, then, 
+            at the end of the week, produce a video of the results. This video will also be uploaded to this site. </p>
+        <p id="motivation" class="text-xl text-center ml-10 mr-10 mt-5"> 
+            The motivation to undertake this project forms from the desire that I want to purchase something daily.
+            The need for a newspaper to start the day is old fashioned with news being available 24/7. 
+            <br> My aim is to go to a shop each day at the same time, bringing much needed routine to my life and, with it, the idea of winning big. </p>    
+        <p id="rules" class="text-xl text-center ml-10 mr-10 my-5">
+                There are three rules which must be followed</p>  <!-- p = paragraph there are three here to aid formatting-->
+           
+
+        <ol id="list" class="list-decimal text-lg italic">  <!--or = Ordered list it should display 1. 2. 3. below but it doesn't - maybe due to tailwind overriding it???-->
+            <li>Only one scratch card can be brought each day*</li>
+            <li>£15 must be spent every week, no more, no less**</li>
+            <li>No other gambling is to be undertaken throughout the year***</li>    
+        </ol>
+    </div>
+<br>
+<br>  <!-- Manual line breaks -->
+<br>
+<br>
+    <p id="terms" class="text-xs"> TC's *Catching up on Bank Holidays / shop not open or personal holidays / no shop nearby is permitted
+ <!-- Manual spacing--><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ** This is in the form of 1* £5 4* £2 and 2* £1 <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                       ***Twice weekly Euromillions ticket is acceptable as I have set numbers</p> 
+                                    
+</main>
+  <script src="./script.js"></script>   <!-- Links the JavaScript into the document -->
+
+  <footer id="footer"> An original idea by <a href="JLS.html"> James Lewis Smith </a> & Coding completed by James Lewis Smith 2023 &copy;</footer>
+                    <!-- A separate space for the footer-->   <!-- A link to my C.V is included-->
+</body>
+</html>
+
+<!-- This is the homepage it does not require much ongoing editing after the assignment is handed in-->

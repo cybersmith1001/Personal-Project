@@ -1,0 +1,94 @@
+<!DOCTYPE html>     <!-- For additional comments see other pages-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Project Scratch Card Profit & Loss</title>
+    <script src="https://cdn.tailwindcss.com"></script>    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+  <header> 
+        <div class="flex justify-center">
+            <img src="logo.jpg" height="200" width="250" alt="Website logo">
+        
+        </div>
+          <nav class="nav" >
+              <a href="home.html" > Home</a>
+              <a href="weekly_votes.html"> Weekly Votes</a>
+              <a href="scratch_photos.html" > Weekly Scratch Card Photos</a>
+              <a href="scratch_videos.html" > Weekly Scratching Videos</a>
+              <a href="Profit_and_Loss.html" > Profit and Loss</a>
+              <a href="blog.html"> Blogging Area</a>  
+          </nav> 
+    </header>  
+
+    <h1 id=projectName class="text-center text-sky-600 text-lg mt-5">
+
+        PROJECT SCRATCH CARD
+
+    </h1>
+
+    <div class="text-center">
+        <button id="bigwin" class="text-sky-600 text-lg mt-5">
+
+            WIN BIG
+
+        </button>
+    </div>
+
+      <p class="description"> A table recording the year's financial progress</p>
+
+  <section>
+        <div>
+          <table id="table52">    <!-- Creates a table within the webpage-->
+            <tr>
+              <th>Week</th>                   <!-- th is table head these descriptions say the same-->
+              <th>Money Spent</th>
+              <th>Money Won</th>
+              <th>Weekly Profit/Loss</th>
+              <th>Total Profit/Loss</th>
+            </tr>
+            <tr>
+              <td>1</td>            <!-- td is table data 1,2,3,4 in order of table head-->
+              <td>£15</td>
+              <td>£0</td>
+              <td>-£15</td>
+              <td>-£15</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>£15</td>     <!-- Position 2 should always be £15-->
+              <td>£2</td>
+              <td>-£13</td>
+              <td>-£28</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>£15</td>           <!-- More entry's each week required until 52 weeks have passed-->
+              <td>Test</td>
+              <td>Test</td>
+              <td>Test</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>£15</td>           
+              <td>Test</td>
+              <td>Test</td>
+              <td>Test</td>
+            </tr>
+        </table>
+      </div>
+  </section>
+
+    <script src="./script.js"></script>
+
+    <footer id="footer"> An original idea by <a href="JLS.html"> James Lewis Smith </a> & Coding completed by James Lewis Smith 2023 &copy;</footer>
+</body>
+</html>
+
+<!-- The idea of this page is to display the finances-->
+<!-- This table needs to be manually updated each Thursday to display Spending/Winnings Profits/Losses-->
+<!-- There is two weeks of dummy data added for the purposes of the assignment-->
+<!-- There is a possibility to try and do maths via coding on this page rather than manual text upload-->
